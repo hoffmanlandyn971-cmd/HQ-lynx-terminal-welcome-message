@@ -108,25 +108,11 @@ SPINNER_FRAMES=(
 )
 
 loading() {
-
     local message="$1"
     local duration="${2:-1}"
 
-    local i=0
-    local end_time
-
-    end_time=$(awk "BEGIN {print systime() + $duration}")
-
-    while [[ "$(awk "BEGIN {print systime() < $end_time}")" == "1" ]]; do
-
-        printf "\r${CYAN}${SPINNER_FRAMES[$i]}${NC} %s..." "$message"
-
-        i=$(( (i + 1) % ${#SPINNER_FRAMES[@]} ))
-
-        sleep 0.08
-
-    done
-
+    printf "\r${CYAN}⠋${NC} %s..." "$message"
+    sleep "$duration"
     printf "\r\033[K"
 }
 
