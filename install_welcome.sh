@@ -743,9 +743,8 @@ while true; do
 
     echo ""
 
-    read -rp "Select an option: " choice
-
-    loading "Opening" 0.4
+    printf "Select an option: "
+    IFS= read -r choice
 
     case "$choice" in
 
@@ -1631,11 +1630,11 @@ while true; do
 
         *)
 
-            clear
-
-            error_msg "Invalid option."
-
+            error_msg "Invalid option: '$choice'"
+            echo "Please enter a number from 0 to 26."
             ;;
+
+
 
     esac
 
