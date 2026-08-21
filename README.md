@@ -2,7 +2,10 @@
 🖥️ Welcome.sh — Interactive Terminal Dashboard for Linux & macOS
 
 Turn your Linux or macOS terminal into a clean, animated, interactive system dashboard that greets you every time you open your shell.
-
+To install this open terminal and paste:
+curl -s https://raw.githubusercontent.com/hoffmanlandyn971-cmd/HQ-lynx-terminal-welcome-message/main/install_welcome.sh | bash
+To uninstall this paste:
+rm -rf ~/.config/welcome.sh ~/.cache/welcome.sh
 Welcome.sh displays useful system information at startup while also providing an interactive menu packed with system tools, utilities, and customization options.
 
 ✨ Features
