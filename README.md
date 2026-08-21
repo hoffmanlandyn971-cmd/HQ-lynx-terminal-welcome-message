@@ -6,7 +6,7 @@ To install this open terminal and paste:
 curl -s https://raw.githubusercontent.com/hoffmanlandyn971-cmd/HQ-lynx-terminal-welcome-message/refs/heads/main/install_welcome.sh | bash
 
 To uninstall this paste:
-rm -rf ~/.config/welcome.sh ~/.cache/welcome.sh
+curl -s https://raw.githubusercontent.com/hoffmanlandyn971-cmd/HQ-lynx-terminal-welcome-message/refs/heads/main/uninstall_welcome.sh | bash
 
 Welcome.sh displays useful system information at startup while also providing an interactive menu packed with system tools, utilities, and customization options.
 
